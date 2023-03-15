@@ -27,7 +27,7 @@
 
 .location {
   width: 100%;
-  background-image: url(./633151.jpg);
+ background-image: radial-gradient(circle, #aacc00, #00a251, #006f65, #003a4b, #000912);
   background-size: cover;
   background-position: bottom;
   margin: 0;

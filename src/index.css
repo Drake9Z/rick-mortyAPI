@@ -27,7 +27,7 @@
 
 .location {
   width: 100%;
-  background-image: url("animated-planet.jpg");
+  background-image: url("/animated-planet.jpg");
   background-size: cover;
   background-position: bottom;
   margin: 0;

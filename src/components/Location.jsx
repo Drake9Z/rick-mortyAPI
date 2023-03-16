@@ -20,7 +20,7 @@ const Location = ({ location, population, onLocationChange }) => {
       <div className="location_component">
         <form className="location_searcher" onSubmit={handleSubmit}>
           <input
-            type="text"
+            type="number"
             id="idLocation"
             name="text"
             value={newLocation}

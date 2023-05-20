@@ -2,6 +2,7 @@ import Location from "./components/Location";
 import ResidentInfo from "./components/ResidentInfo";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import './App.css'
 
 const App = () => {
   const [location, setLocation] = useState({});
@@ -47,9 +48,13 @@ const App = () => {
         population={numResidents}
       />
       <div className="residents">
-        {numResidents != 0 ?  <h2>See all residents found in this dimesion</h2> : <h2>This location seems empty</h2>}
+        <h2>
+          {numResidents != 0
+            ? " See all residents found in this dimesion"
+            : "This location seems empty"}
+        </h2>
         {residentsArray?.map((resident) => (
-          <ResidentInfo link={resident} key={resident}/>
+          <ResidentInfo link={resident} key={resident} />
         ))}
       </div>
     </div>

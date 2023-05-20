@@ -1,8 +1,14 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Play', sans-serif;
 }
 
 .loader {
@@ -17,3 +23,255 @@
   justify-content: center;
 }
 
+
+.App {
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  align-items: center;
+}
+
+.location {
+  width: 100%;
+  background-image: url(/animated-planet.jpg);
+  background-size: cover;
+  background-position: bottom;
+  margin: 0;
+}
+
+p {
+  color: rgb(51, 241, 255);
+  font-weight: 700;
+  text-shadow: 2px 2px rgba(255, 65, 246, 0.5)
+}
+
+
+.location_component {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+.location_searcher {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.location_searcher .text_input{
+  background-color: rgba(65, 125, 255, 0.5);
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid rgb(29, 191, 255);
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px rgb(214, 51, 255);
+}
+
+.text_input{
+  width: 300px;
+}
+
+.location_searcher .btn_input{
+  background-color: rgba(65, 125, 255, 0.788);
+  width: 20%;
+  max-width: 390px;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid rgb(29, 33, 255);
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px rgba(221, 51, 255, 0.226);
+}
+
+.input:focus {
+  color: rgb(0, 255, 255);
+  background-color: rgba(65, 125, 255, 0.5);
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  border: 2px solid rgb(229, 29, 255);
+  transition: .1s;
+  transition-property: box-shadow;
+}
+
+.location_card {
+  width: 380px;
+  border: 3px solid rgba(0, 204, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.267);
+
+}
+
+.location_card .location_title {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid rgba(0, 204, 255, 0.3);
+}
+
+.location_title svg {
+  align-self: flex-end;
+}
+
+.location_title .location_title-name {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+  height: 90px;
+}
+
+.location_title-name p {
+  align-self: center;
+  font-size: large;
+}
+
+.location_content {
+  width: 100%;
+  height: 200px;
+  border: 1px solid rgba(0, 204, 255, 0.3);
+  margin: 6px 0;
+  display: flex;
+}
+
+.location_content .location_content-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  border: 1px solid rgba(0, 204, 255, 0.3);
+}
+
+.location_content-type h3 {
+  margin: .5rem;
+}
+
+.location_content-type p {
+  align-self: center;
+  justify-self: center;
+}
+
+.location_content .location_content-dp {
+  width: 65%;
+  border: 1px solid rgba(0, 204, 255, 0.3);
+}
+
+.location_content-dp .location_content-dimention{
+  border: 1px solid rgba(0, 204, 255, 0.3);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.location_content-dimention h3 {
+  margin: .5rem;
+}
+
+.location_content-dimention p {
+  align-self: center;
+  justify-self: center;
+}
+
+.location_content-dp .location_content-population{
+  border: 1px solid rgba(0, 204, 255, 0.3);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.location_content-population h3 {
+  margin: .5rem;
+}
+
+.location_content-population p {
+  align-self: center;
+  justify-self: center;
+}
+
+.residents {
+  width: 100%;
+  background-image: radial-gradient(circle, #aacc00, #00a251, #006f65, #003a4b, #000912);
+  background-size: cover;
+  background-position: bottom;
+  box-shadow: inset 2px 60px 40px 0 rgb(0, 3, 26);
+  margin: 0;
+  padding: 0 0.5rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.residents h2 {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  color: rgb(51, 241, 255);
+  text-shadow: 2px 2px rgba(255, 65, 246, 0.5)
+}
+
+.resident_info {
+  width: 290px;
+ height: 460px;
+ background: rgb(40,40,55);
+ background: linear-gradient(344deg, rgba(40,40,55,1) 0%, rgba(16,16,18,1) 50%);
+ box-shadow: 4px 6px 14px #00000036;
+ border-radius: 3px;
+ color: #F9F9F9;
+ transition: all .3s;
+ position: relative;
+}
+
+.resident_info:hover {
+ margin-top: -30px;
+}
+
+.resident_image {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resident_image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.resident_status{
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  color: rgb(51, 241, 255);
+  font-weight: 700;
+  text-shadow: 2px 2px rgba(255, 65, 246, 0.5);
+  padding: 1px 9px;
+  background-color: rgba(202, 231, 248, 0.384);
+}
+
+.resident_data {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.resident_data-title {
+  display: flex;
+}
+
+.resident_data-title p {
+  margin: 0 auto;
+}
